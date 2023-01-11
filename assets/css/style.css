@@ -1,0 +1,288 @@
+
+
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: "Karla", sans-serif; 
+}
+
+body {
+padding: 3rem;
+}
+
+/* ==== Navi Leiste ===== */
+
+nav {
+    padding: 1rem 0;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+nav a:first-of-type {
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+nav a:nth-of-type(2) {
+    margin-left: auto;
+}
+
+nav a {
+    margin: 0 0.5rem;
+    text-decoration: none;
+    color: #323A45;
+}
+
+img {
+    width: 100%;
+}
+
+/*  ======  die erste und zweite Section ======= */
+
+.section1v5, .section2v5 { 
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 37% 1fr 1fr; 
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+} 
+/* Section 1 und 2 und 3 und 4  - - Grid Zuordnung - Bilder */
+
+.pic1, .pic2, .pic3, .pic4 
+{   grid-column: 1/4; }
+
+.pic11small, .pic21small, 
+.pic31small, .pic41small {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.pic12small, .pic22small,
+.pic32small, .pic42small {  
+    grid-column: 2/3;
+    grid-row:2/3; 
+}
+
+.pic13small, .pic23small,
+.pic33small, .pic43small { 
+    grid-column: 3/4;
+    grid-row: 2/3; 
+}
+
+.pic14small, .pic24small,
+.pic34small, .pic44small {
+    grid-column:1/2;
+    grid-row:3/3;
+}
+
+.pic15small, .pic25small,
+.pic35small, .pic45small {
+    grid-column: 2/3;
+    grid-row:3/4;
+}
+
+.pic16small, .pic26small,
+.pic36small, .pic46small {
+    grid-column: 3/4;
+    grid-row:3/4;
+}
+
+/* Zweck: Gleicher Abstand nach unten zwischen den Bilden */
+.pic11small, .pic12small, .pic13small,
+.pic21small, .pic22small, .pic23small,
+.pic31small, .pic32small, .pic33small,
+.pic41small, .pic42small, .pic43small,.pic3, .pic4,
+.pic5
+{   margin-bottom: 4rem; }
+
+/* Section 1 und 2 -- Positionieren vom Untertext
+===== Großbilder */
+
+.pic1_unter, .pic2_unter {
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr;
+    padding-top:1rem;
+}
+
+.pic1_unter p:nth-of-type(2), .pic2_unter p:nth-of-type(2)
+{   text-align: end; }
+
+.pic1_unter p:nth-of-type(3), .pic2_unter p:nth-of-type(3)
+{   opacity: 0.4;  }
+
+
+/* Section 1 und 2 -- Textpositionierung von kleinen Imgs */
+
+
+.pic11unter, .pic12unter, .pic13unter,
+.pic14unter, .pic15unter, .pic16unter, 
+.pic21unter, .pic22unter, .pic23unter,
+.pic24unter, .pic25unter, .pic26unter {
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr;
+    padding-top:1rem;
+}
+
+.pic11unter p:nth-of-type(2), .pic12unter p:nth-of-type(2),
+.pic13unter p:nth-of-type(2), .pic14unter p:nth-of-type(2),
+.pic15unter p:nth-of-type(2), .pic16unter p:nth-of-type(2)
+{   text-align: end; }
+
+.pic11unter p:nth-of-type(3), .pic12unter p:nth-of-type(3),
+.pic13unter p:nth-of-type(3), .pic14unter p:nth-of-type(3),
+.pic15unter p:nth-of-type(3), .pic16unter p:nth-of-type(3)
+{   opacity: 0.4; }
+
+.pic21unter p:nth-of-type(2), .pic22unter p:nth-of-type(2),
+.pic23unter p:nth-of-type(2), .pic24unter p:nth-of-type(2),
+.pic25unter p:nth-of-type(2), .pic26unter p:nth-of-type(2) 
+{   text-align: end; }
+
+.pic21unter p:nth-of-type(3), .pic22unter p:nth-of-type(3),
+.pic23unter p:nth-of-type(3), .pic24unter p:nth-of-type(3), 
+.pic25unter p:nth-of-type(3), .pic26unter p:nth-of-type(3)
+{   opacity: 0.4; }
+
+
+/*  ======  die dritte UND vierte Section ======= */
+
+.section3v5, .section4v5 {
+display: grid;
+/* grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); */
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* grid-template-rows: 37% 1fr 1fr; */
+    gap: 1.5rem;
+    margin-bottom: 5rem;
+}
+/* ==== Bilder Zuordnung- Grid  - 3.Section =====*/
+
+
+/* Positionieren vom Untertext
+===== Großbilder */
+
+.pic3_unter, .pic4_unter  {
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr; 
+    padding-top:1rem;
+}
+
+.pic3_unter p:nth-of-type(2), .pic4_unter p:nth-of-type(2) 
+{   text-align: end; }
+
+.pic3_unter p:nth-of-type(3), .pic4_unter p:nth-of-type(3) 
+{   opacity: 0.4; }
+
+
+/* Untertext- kleinere Bilder */
+
+.pic31unter, .pic32unter, .pic33unter,
+.pic34unter, .pic35unter, .pic36unter,
+.pic41unter, .pic42unter, .pic43unter,
+.pic44unter, .pic45unter, .pic46unter { 
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr;
+    padding-top:1rem;
+}
+
+.pic31unter p:nth-of-type(2), .pic32unter p:nth-of-type(2),
+.pic33unter p:nth-of-type(2), .pic34unter p:nth-of-type(2), 
+.pic35unter p:nth-of-type(2), .pic36unter p:nth-of-type(2)
+{   text-align: end;}
+
+.pic31unter p:nth-of-type(3), .pic32unter p:nth-of-type(3),
+.pic33unter p:nth-of-type(3), .pic34unter p:nth-of-type(3),
+.pic35unter p:nth-of-type(3), .pic36unter p:nth-of-type(3) 
+{   opacity: 0.4; }
+
+.pic41unter p:nth-of-type(3), .pic42unter p:nth-of-type(3),
+.pic43unter p:nth-of-type(3), .pic44unter p:nth-of-type(3),
+.pic45unter p:nth-of-type(3), .pic46unter p:nth-of-type(3)
+{   opacity: 0.4; }
+
+.pic41unter p:nth-of-type(2), .pic42unter p:nth-of-type(2),
+.pic43unter p:nth-of-type(2), .pic44unter p:nth-of-type(2), 
+.pic45unter p:nth-of-type(2), .pic46unter p:nth-of-type(2)
+{   text-align: end;}
+
+/* ========= Section Fünf ========== */
+
+.section5v5 { 
+    
+    display: grid;
+    /*grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));*/
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ; 
+    gap: 1.5rem;
+}
+
+.pic5 {
+    grid-column: 1/4; 
+}
+
+.pic51small {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+.pic52small {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+    
+.pic53small {
+    grid-column: 3/4;
+    grid-row: 2/3;
+} 
+
+.pic5_unter  {
+    display:grid;
+    grid-template-columns: 80% 20%;
+    grid-template-rows: 1fr 1fr; 
+}
+
+.pic5_unter p:nth-of-type(2)
+{    text-align: end;}
+
+.pic5_unter p:nth-of-type(3) 
+{    opacity: 0.4; }
+
+.pic51unter p:nth-of-type(2), .pic52unter p:nth-of-type(2),
+.pic53unter p:nth-of-type(2) 
+{    text-align: end;}
+
+    .pic51unter p:nth-of-type(3), .pic52unter p:nth-of-type(3),
+    .pic53unter p:nth-of-type(3) 
+    { opacity: 0.4;}
+
+    .pic51unter, .pic52unter, .pic53unter {
+    display:grid;
+    grid-template-columns: 80% 20%;
+    /* grid-template-rows: 1fr 1fr;   */  
+    padding-top:1rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 33% 15% 30% 20%;
+    grid-template-rows: 45% 25% 25% 25%;
+    font-size: 0.8rem;
+}
+
+footer p:nth-of-type(1), p:nth-of-type(2),
+    p:nth-of-type(3), p:nth-of-type(4)
+{   font-size: 1rem;}
+
+img {
+    opacity: 1.0;
+}
+img:hover {
+    opacity: 0.4;
+}
